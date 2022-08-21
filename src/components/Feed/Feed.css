@@ -1,0 +1,45 @@
+.feeds{
+    position: relative;
+    width: 497px;
+    height: 500px;
+    margin: 50px 280px;
+    display: inline-block;
+    box-sizing: border-box;
+    border:  0.5px solid gray;
+    border-radius: 10px;
+}
+
+h2{
+  margin-left: 90px;
+  margin-top: 5px;
+  margin-bottom: -40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.ig-img{
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.time-container{
+  margin-left: 90px;
+  margin-top: -40px;
+}
+
+.feeds h3{
+    color: black;
+    margin: 20px;
+    text-align: justify;
+    font-size: .9375rem;
+    font-weight: 400;
+}
+
+  .feed-img{
+    height:340px;
+    width: 500px;
+    border-radius: 5px;
+  }
