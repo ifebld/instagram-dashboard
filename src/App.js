@@ -2,29 +2,29 @@ import React, { useState, useEffect} from 'react';
 import './App.css';
 import Feed from './components/Feed/Feed';
 import TopBar from './components/TopBar/TopBar';
-import axios from 'axios';
-import data from './api/data';
+
+import data from './api/data.js';
 
 
 function App() {
 
   const [feeds, setFeeds] = useState(data);
 
-  const options = {
-    method: 'GET',
-    url: 'https://instagram130.p.rapidapi.com/account-feed',
-    params: {username: 'adele'},
-    headers: {
-      'X-RapidAPI-Key': '1dcc38ad71mshb24355acf816063p179aecjsn7eb283dea071',
-      'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
-    }
-  };
+  // const options = {
+  //   method: 'GET',
+  //   url: 'https://instagram130.p.rapidapi.com/account-feed',
+  //   params: {username: 'adele'},
+  //   headers: {
+  //     'X-RapidAPI-Key': '1dcc38ad71mshb24355acf816063p179aecjsn7eb283dea071',
+  //     'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
+  //   }
+  // };
 
   
 
 
   async function getFeeds (){
-    let response = await axios.request(options);
+    let response = await data.request(options);
 
     console.log(response.data);
     const allfeeds = response.data;
